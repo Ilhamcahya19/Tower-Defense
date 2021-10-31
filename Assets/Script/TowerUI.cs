@@ -90,7 +90,6 @@ public class TowerUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         else
 
         {
-
             _currentSpawnedTower.LockPlacement ();
 
             _currentSpawnedTower.ToggleOrderInLayer (false);

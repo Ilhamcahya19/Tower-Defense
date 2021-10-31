@@ -64,43 +64,22 @@ public class Tower : MonoBehaviour
  
 
         float nearestDistance = Mathf.Infinity;
-
         Enemy nearestEnemy = null;
 
- 
-
         foreach (Enemy enemy in enemies)
-
         {
-
             float distance = Vector3.Distance (transform.position, enemy.transform.position);
-
             if (distance > _shootDistance)
-
             {
-
                 continue;
-
             }
-
- 
-
             if (distance < nearestDistance)
-
             {
-
                 nearestDistance = distance;
-
                 nearestEnemy = enemy;
-
             }
-
         }
-
- 
-
         _targetEnemy = nearestEnemy;
-
     }
 
  
